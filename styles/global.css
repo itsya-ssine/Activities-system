@@ -5,12 +5,22 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #EDF2F4;
+    font-family: 'Kanit', sans-serif;
+    background: #F5F7FA;
+    color: #1F2937;
     padding-top: 60px;;
 }
 
 .logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }

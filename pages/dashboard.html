@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <nav class="computer-nav">
@@ -32,32 +34,45 @@
     </nav>
 
 
-    <section class="dashboard">
-        <h1 class="dash-title">Dashboard</h1>
-
+    <main class="dashboard">
         <div class="stats-grid">
             <div class="stat-card">
+                <div class="stat-icon">📅</div>
                 <h3>Total Activities</h3>
                 <p class="stat-number">24</p>
             </div>
 
             <div class="stat-card">
+                <div class="stat-icon">🏛️</div>
                 <h3>Total Clubs</h3>
                 <p class="stat-number">12</p>
             </div>
 
             <div class="stat-card">
+                <div class="stat-icon">🎓</div>
                 <h3>Registered Students</h3>
                 <p class="stat-number">320</p>
             </div>
 
             <div class="stat-card">
+                <div class="stat-icon">🛠️</div>
                 <h3>Workshops This Month</h3>
                 <p class="stat-number">8</p>
             </div>
         </div>
 
-        <div class="section">
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h2>Activities Per Month</h2>
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h2>Student Distribution</h2>
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+
+        <section class="section">
             <h2>Recent Activities</h2>
             <table class="styled-table">
                 <thead>
@@ -73,38 +88,24 @@
                         <td>Basketball Tournament</td>
                         <td>25 Dec 2025</td>
                         <td>Gym</td>
-                        <td>Upcoming</td>
+                        <td><span class="status upcoming">Upcoming</span></td>
                     </tr>
-
                     <tr>
                         <td>AI Workshop</td>
                         <td>10 Jan 2026</td>
                         <td>Lab 3</td>
-                        <td>Open</td>
+                        <td><span class="status open">Open</span></td>
                     </tr>
-
                     <tr>
                         <td>Music Club Party</td>
                         <td>5 Jan 2026</td>
                         <td>Hall A</td>
-                        <td>Closed</td>
+                        <td><span class="status closed">Closed</span></td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-
-        <div class="section">
-            <h2>Quick Actions</h2>
-
-            <div class="actions-grid">
-                <button class="action-btn">Add Activity</button>
-                <button class="action-btn">Create Club</button>
-                <button class="action-btn">Manage Students</button>
-                <button class="action-btn">View Reports</button>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-container">
@@ -144,4 +145,5 @@
     </footer>
 
 </body>
+
 </html>
