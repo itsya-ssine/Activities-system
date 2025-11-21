@@ -1,0 +1,118 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.hero a.cta-btn {
+    text-decoration: none;
+    background-color: white;
+    color: #2575fc;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero a.cta-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 20px;
+}
+
+.feature-card {
+    background-color: white;
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.showcase {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.showcase h2 {
+    margin-bottom: 40px;
+}
+
+.showcase-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.showcase-card {
+    background-color: #fff;
+    flex: 1 1 250px;
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.showcase-card:hover {
+    transform: translateY(-5px);
+}
+
+.showcase-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.showcase-card .content {
+    padding: 20px;
+    text-align: left;
+}
+
+.showcase-card .content h4 {
+    margin: 0 0 10px;
+}
+
+.showcase-card .content p {
+    font-size: 0.9rem;
+    color: #555;
+}
