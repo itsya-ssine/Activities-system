@@ -1,0 +1,131 @@
+/* ----------------------------- */
+/* DASHBOARD SECTION             */
+/* ----------------------------- */
+
+.dashboard {
+    padding: 2rem;
+    background-color: #EDF2F4; /* light gray background */
+}
+
+.dash-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2B2D42;
+    margin-bottom: 2rem;
+}
+
+/* ----------------------------- */
+/* STATS CARDS                   */
+/* ----------------------------- */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background-color: #8D99AE; /* gray */
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    font-weight: 600;
+    color: #2B2D42;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #EF233C; /* red accent */
+}
+
+/* ----------------------------- */
+/* TABLES                        */
+/* ----------------------------- */
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.styled-table thead tr {
+    background-color: #2B2D42; /* dark blue header */
+    color: #EDF2F4;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #8D99AE;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #EDF2F4;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #D90429; /* dark red highlight */
+    color: #EDF2F4;
+}
+
+/* ----------------------------- */
+/* QUICK ACTION BUTTONS          */
+/* ----------------------------- */
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.action-btn {
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background-color: #EF233C;
+    color: #EDF2F4;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #D90429;
+    transform: translateY(-2px);
+}
+
+/* ----------------------------- */
+/* SECTION HEADINGS              */
+/* ----------------------------- */
+
+.section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2B2D42;
+    margin-bottom: 1rem;
+}
+
+/* ----------------------------- */
+/* RESPONSIVE                    */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+    .stats-grid, .actions-grid {
+        grid-template-columns: 1fr;
+    }
+}
