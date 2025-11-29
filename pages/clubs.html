@@ -29,6 +29,22 @@
             <a href="dashboard.html" class="comp-nav-link">Dashboard</a>
             <a href="advisor.html" class="comp-nav-link">AI Advisor</a>
         </div>
+        <div class="account-nav">
+            <div id="not-logged">
+                <a href="../login.html" class="comp-nav-link login-btn">Login</a>
+            </div>
+
+            <div id="logged" class="profile-dropdown" style="display: none;">
+                <img src="images/default-user.png" class="profile-avatar" id="navAvatar">
+                <span id="navName">Student</span>
+
+                <div class="dropdown-menu">
+                    <a href="pages/dashboard.html">Dashboard</a>
+                    <a href="pages/profile.html">Profile</a>
+                    <a href="#" id="logoutBtn">Logout</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <div class="clubs-container">

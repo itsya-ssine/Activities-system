@@ -96,3 +96,49 @@
   font-size: 14px;
   color: #555;
 }
+
+.account-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.profile-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    width: 150px;
+}
+
+.dropdown-menu a {
+    padding: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+}
+
+.dropdown-menu a:hover {
+    background: #f4f4f4;
+    border-radius: 5px;
+}
