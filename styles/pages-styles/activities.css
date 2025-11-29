@@ -1,10 +1,11 @@
 .activities-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 16px;
+  justify-items: center;
 
   padding: 30px;
-  max-width: 1300px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
@@ -20,6 +21,7 @@
 .activity-card {
   position: relative;
   width: 350px;
+  margin: 0 10px;
   background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
