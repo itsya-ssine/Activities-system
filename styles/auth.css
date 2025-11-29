@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #eef1f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.auth-container {
+    width: 900px;
+    height: 550px;
+    background: #fff;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.form-box {
+    width: 50%;
+    padding: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #2575fc;
+}
+
+.switch-text {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.switch-btn {
+    color: #4E73DF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.account-select {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.type-btn {
+    flex: 1;
+    padding: 10px;
+    background: #f1f1f1;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.type-btn.active {
+    background: #2575fc;
+    color: white;
+    border-color: #4E73DF;
+}
+
+.side-box {
+    width: 50%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 60px 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-box h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.side-box p {
+    font-size: 16px;
+}
