@@ -1,11 +1,11 @@
 .clubs-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 16px;
   justify-items: center;
 
   padding: 24px;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@
 
 .club-card {
   position: relative;
-  width: 300px;
+  width: 330px;
   background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
