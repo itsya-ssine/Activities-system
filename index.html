@@ -47,6 +47,17 @@
         </div>
     </nav>
 
+    <button id="mobileMenuBtn" class="mobile-menu-btn">☰</button>
+    <nav class="mobile-nav">
+        <a href="./index.html">Home</a>
+        <a href="pages/activities.html">Activities</a>
+        <a href="pages/clubs.html">Clubs</a>
+        <a href="pages/dashboard.html">Dashboard</a>
+        <a href="pages/advisor.html">AI Advisor</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+
     <section class="hero">
         <h1>Welcome to RY System</h1>
         <p>Explore extracurricular activities, workshops, and events designed to help students grow and discover
@@ -105,6 +116,20 @@
             <p>© 2025 Activities Platform — All Rights Reserved</p>
         </div>
     </footer>
+
+    <script>
+        const mobileBtn = document.getElementById("mobileMenuBtn");
+        const mobileNav = document.getElementById("mobileNav");
+
+        mobileBtn.addEventListener("click", () => {
+            if (mobileNav.style.display === "flex") {
+                mobileNav.style.display = "none";
+            } else {
+                mobileNav.style.display = "flex";
+            }
+        });
+    </script>
+
 </body>
 
 </html>

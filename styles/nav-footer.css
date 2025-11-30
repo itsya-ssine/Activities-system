@@ -1,44 +1,99 @@
 .computer-nav {
-    background-color: #2B2D42;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 20px;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  background-color: #2B2D42;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .nav-logo-txt {
-    font-size: 24px;
-    font-family: "Kanit", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  font-size: 24px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .comp-nav-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
 
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
 }
 
 .comp-nav-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .selected-nav {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
+.mobile-nav,
+.mobile-menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .computer-nav {
+    display: none;
+  }
+
+  body {
+    padding-top: 0;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #2B2D42;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-size: 22px;
+    border-radius: 6px;
+    z-index: 1500;
+  }
+
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: #2B2D42;
+    padding: 20px;
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1400;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+  }
+}
+
+
+
 
 .footer {
   background: #fff;
@@ -98,47 +153,47 @@
 }
 
 .account-nav {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .profile-dropdown {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .profile-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .dropdown-menu {
-    position: absolute;
-    top: 45px;
-    right: 0;
-    background: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    display: none;
-    flex-direction: column;
-    width: 150px;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  width: 150px;
 }
 
 .dropdown-menu a {
-    padding: 8px;
-    font-size: 14px;
-    text-decoration: none;
-    color: #222;
+  padding: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #222;
 }
 
 .dropdown-menu a:hover {
-    background: #f4f4f4;
-    border-radius: 5px;
+  background: #f4f4f4;
+  border-radius: 5px;
 }
