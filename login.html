@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,76 +8,78 @@
 
     <link rel="stylesheet" href="../styles/auth.css">
 </head>
+
 <body>
 
-<div class="auth-container">
-    <div class="form-box" id="loginBox">
-        <h2>Login</h2>
+    <div class="auth-container">
+        <div class="form-box" id="loginBox">
+            <h2>Login</h2>
 
-        <div class="account-select">
-            <button class="type-btn active" data-type="student">Student</button>
-            <button class="type-btn" data-type="club">Club</button>
-            <button class="type-btn" data-type="admin">Administration</button>
+            <div class="account-select">
+                <button class="type-btn active" data-type="student">Student</button>
+                <button class="type-btn" data-type="club">Club</button>
+                <button class="type-btn" data-type="admin">Administration</button>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            </div>
+
+            <button class="submit-btn">Login</button>
+
+            <p class="switch-text">
+                Student?
+                <span class="switch-btn" id="openRegister">Create an account</span>
+            </p>
         </div>
 
-        <div class="input-group">
-            <label>Email</label>
-            <input type="email" id="loginEmail" placeholder="Enter your email" required>
+
+        <div class="form-box hidden" id="registerBox">
+            <h2>Create Student Account</h2>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Student Email</label>
+                <input type="email" placeholder="student@school.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Create password" required>
+            </div>
+
+            <div class="input-group">
+                <label>Student ID</label>
+                <input type="text" placeholder="Ex: 202312345" required>
+            </div>
+
+            <button class="submit-btn">Register</button>
+
+            <p class="switch-text">
+                Already have an account?
+                <span class="switch-btn" id="backToLogin">Login</span>
+            </p>
         </div>
 
-        <div class="input-group">
-            <label>Password</label>
-            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+
+        <div class="side-box">
+            <h1>RY - SYSTEM</h1>
+            <p>Manage your activities, clubs, and academic life easily.</p>
         </div>
 
-        <button class="submit-btn">Login</button>
-
-        <p class="switch-text">
-            Student?  
-            <span class="switch-btn" id="openRegister">Create an account</span>
-        </p>
     </div>
 
-
-    <div class="form-box hidden" id="registerBox">
-        <h2>Create Student Account</h2>
-
-        <div class="input-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="Your full name" required>
-        </div>
-
-        <div class="input-group">
-            <label>Student Email</label>
-            <input type="email" placeholder="student@school.com" required>
-        </div>
-
-        <div class="input-group">
-            <label>Password</label>
-            <input type="password" placeholder="Create password" required>
-        </div>
-
-        <div class="input-group">
-            <label>Student ID</label>
-            <input type="text" placeholder="Ex: 202312345" required>
-        </div>
-
-        <button class="submit-btn">Register</button>
-
-        <p class="switch-text">
-            Already have an account?
-            <span class="switch-btn" id="backToLogin">Login</span>
-        </p>
-    </div>
-
-
-    <div class="side-box">
-        <h1>RY - SYSTEM</h1>
-        <p>Manage your activities, clubs, and academic life easily.</p>
-    </div>
-
-</div>
-
-<script src="../js/auth.js"></script>
+    <script src="../js/auth.js"></script>
 </body>
+
 </html>
